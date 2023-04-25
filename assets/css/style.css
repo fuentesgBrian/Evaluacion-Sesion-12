@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header{
+    background-image: url("../img/fondo.jpg");
+    background-size: 500px;
+}
+
+.navbar-brand img{
+    width: 8%;
+}
+
+/* Titulos */
+#tituloNimrodel{
+    text-align: center;
+    font-size: 64px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: #8e8e8f;
+}
+
+h2{
+    text-align: center;
+    text-decoration: overline;
+    margin-bottom: 4%;
+}
+
+/* tarjetas de destacados de la semana */
+.row img{
+    height: 200px;
+    }
+    .card-body{
+        text-align: center;
+    }
+
+
+
+/* Formularios Comuniquemonos y Reserva */
+#comuniquemonos{
+    background-color: #1b1b1b;
+    color: white;
+    opacity: 0.9;
+    border-radius: 6px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 4%;
+    width: 40%;
+}
+
+form{
+    width: 100px;
+    margin: auto;
+}
+
+#reserva{
+    background-color: #1b1b1b;
+    color: white;
+    opacity: 0.9;
+    border-radius: 6px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 4%;
+    width: 40%;
+}
+
+/* Pie de pagina */
+footer{
+    background-image: url("../img/fondo.jpg");
+    text-align: center;
+    height: 100px;
+    padding: 6%;
+}
+
+footer p{
+    color: white;
+}
+
+@media(max-width:800px){
+    #comuniquemonos{
+        display: none;
+    }
+    #reserva{
+        display: none;
+    }
+    #destacadoSeleccionado{
+        width: 100%;
+    }
+
+    #imagen{
+        width: 100%;
+    }
+}
+
+#txtMotivo{
+    width: 100%;
+}
+
+@media (min-width:800px) and (max-width:1300px) {
+    
+    #comuniquemonos, #reserva{
+        width: 60%;
+    }
+    #destacadoSeleccionado{
+        width: 100%;
+        
+    }
+
+    #imagen{
+        width: 60%;
+        height: 60%;
+
+    }
+}
+
+#carouselExampleFade img{
+    height: 650px;
+}
+
+#destacadoSeleccionado{
+    text-align: center;
+    width: 60%;
+    background-color: black;
+    position: fixed;
+    top: 15%;
+    bottom: 15%;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    color: white;
+    display: none;
+
+}
+
+#botonCerrar{
+    display: block;
+}
+
+
